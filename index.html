@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+    <form name="cal">
+      <input type="text" name="display"><br><br>
+      <input type="button" name="btn9" value="9" onclick="dis(btn9.value)">
+      <input type="button" name="btn8" value="8" onclick="dis(btn8.value)">
+      <input type="button" name="btn7" value="7" onclick="dis(btn7.value)">
+      <input type="button" name="btnp" value="+" onclick="dis(btnp.value)">
+      <br><br>
+      <input type="button" name="btn6" value="6" onclick="dis(btn6.value)">
+      <input type="button" name="btn5" value="5" onclick="dis(btn5.value)">
+      <input type="button" name="btn4" value="4" onclick="dis(btn4.value)">
+      <input type="button" name="btns" value="-" onclick="dis(btns.value)">
+      <br><br>
+      <input type="button" name="btn3" value="3" onclick="dis(btn3.value)">
+      <input type="button" name="btn2" value="2" onclick="dis(btn2.value)">
+      <input type="button" name="btn1" value="1" onclick="dis(btn1.value)">
+      <input type="button" name="btnm" value="*" onclick="dis(btnm.value)">
+      <br><br>
+      <input type="button" name="btn0" value="0" onclick="dis(btn0.value)">
+      <input type="button" name="btnd" value="/" onclick="dis(btnd.value)">
+      <input type="button" name="btndt" value="." onclick="dis(btndt.value)">
+      <input type="button" name="btneq" value="=" onclick="display.value=eval(display.value)"><br><br>
+      <input type="button" value="clr" onclick="cal.display.value= ''" id ="clr">
+      <br><br>
+    </form>
+
+    </div>
+    <script>
+    function dis(x){
+        cal.display.value=cal.display.value+x;
+    }
+    </script>
+</body>
+</html>
